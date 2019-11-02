@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="https://www.google.com/search" method="get">
+
+      <fieldset>
+        <legend><b>Pesqusar no google </b></legend>
+        <label for="buscar">buscar</label>
+        <input type="text" name="q" size="50" placeholder="Faça sua busca" autofocus spellcheck="true">
+        <input type="submit" name="buscar" value="enviar">
+        <input type="submit" name="limpar" value="cancelar">
+      </fieldset>
+
+      <br><br>
+      <fieldset>
+        <legend><b>Autocompletar e senha </b></legend>
+        <label for="cidade"></label>
+        <input id="cidade_nome"  name="cidade_nome" value="" type="text" list="cidade" required/>
+        <datalist class="" id="cidade">
+          <option value="Rio de janeiro"></option>
+          <option value="Campos"></option>
+          <option value="São Paulo"></option>
+          <option value="Teste"></option>
+        </datalist>
+        <br><br>
+        <label for="senha">senha: </label>
+        <input type="password" name="senha" value="" pattern="(?=.*\d)(?=.*[a-z]).{8}">
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend><b>checkbox </b></legend>
+        <label for="valor">valor: </label>
+        <input type="checkbox" name="valor" value="valor"/>opc1
+          <input type="checkbox" name="valor" value="valor"/>opc2
+            <input type="checkbox" name="valor" value="valor"/>opc3
+      </fieldset>
+          <br><br>
+          <b>radio: </b>
+          <input type="radio" name="valor" value="valor"/>opc1
+            <input type="radio" name="valor" value="valor"/>opc2
+              <input type="radio" name="valor" value="valor"/>opc3
+      <br><br>
+      <b>Grupos de seleção: </b>
+      <select class="" name="nomeMenu" size="7" multiple>
+        <optgroup label="linguagens WEB">
+          <option value="valor 1">HTML</option>
+          <option value="valor 2">CSS</option>
+          <option value="valor 3">JAVASCRIT</option>
+        </optgroup>
+        <optgroup label="Linguagens desktop">
+          <option value="vaor 1">C</option>
+          <option value="vaor 1">C++</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <b>textarea: </b>
+      <textarea name="name" rows="8" cols="50" maxlength="500" disabled >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+      <br><br>
+      <input type="file" name="" value="">
+      <br><br>
+      <input type="search" name="" value="">pesquisa
+      <br>
+      <input type="number" name="" value="">numero
+      <br>
+      <input type="range" name="" value="">range
+      <br>
+      <input type="tel" name="" value="">Telefone
+      <br>
+      <input type="color" name="" value="">Cor
+      <br>
+      <input type="url" name="" value="">site
+      <br>
+      <input type="date" name="" value="">Data 
+
+    </form>
+
+  </body>
+</html>
