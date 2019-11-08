@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Formulario</title>
   </head>
   <body>
     <h1>Aulas de Hipermidias</h1>
@@ -10,34 +10,34 @@
     <form >
       <fieldset>
         <legend>Dados Pessoais: </legend>
-        <label for="nome: ">nome: </label>
+        <label for="nome">nome: </label>
         <input type="text" id="nome" required>
         <label for="sobrenome">Sobrenome: </label>
         <input type="text" id="sobrenome" required>
         <br>  <br>
         <label for="nascimento">Nascimento: </label>
-        <input type="date" required>
+        <input type="date" id="nascimento" required>
         <br>  <br>
         <label for="rg">RG: </label>
-        <input type="number" size="9" required>
+        <input type="number" id="rg" required>
         <br>  <br>
         <label for="cpf">CPF: </label>
-        <input type="number" size="9" required> - <input type="number" size="2" required>
+        <input type="number" id="cpf" required> - <input type="number" id="cpf1" required>
 
       </fieldset>
       <br><br>
       <fieldset>
         <legend>Dados de Endereço:</legend>
         <label for="rua">Rua: </label>
-        <input type="text" id="rua"required>
+        <input type="text" id="rua" required>
         <label for="numero">Número: </label>
-        <input type="number"required>
+        <input type="number" id="numero" required>
         <br><br>
         <label for="bairro">Bairro: </label>
-        <input type="text" name="" value="" required>
+        <input type="text" id="bairro" required>
         <br><br>
-        <label for="estado">Estado</label>
-        <select class="" name="estados" required>
+        <b>Estados:</b>
+        <select name="estados">
           <option value="AC">Acre</option>
           	<option value="AL">Alagoas</option>
           	<option value="AP">Amapá</option>
@@ -68,20 +68,20 @@
         </select>
         <br><br>
         <label for="cidade">Cidade: </label>
-        <input type="text" name="" value=""required>
+        <input type="text" id="cidade" required>
         <br><br>
         <label for="cep">CEP: </label>
-        <input type="number" name="" size="5" required> -
-        <input type="number" name="" size="3" required>
+        <input type="number" id="cep" required> -
+        <input type="number" id="cep1" required>
       </fieldset>
       <br><br>
       <fieldset>
         <legend>Dados de login</legend>
         <label for="email">Email: </label>
-        <input type="email" name="" value="" required>
+        <input type="email" id="email" required>
         <br><br>
         <label for="imagemperfil">Imagem de perfil: </label>
-        <input type="file" name="" value="" required>
+        <input type="file" id="imagemperfil" required>
         <br><br>
         <label for="login">Login do usuário: </label>
         <input type="text" id="login" required>
@@ -96,21 +96,17 @@
       <br><br>
       <fieldset>
         <legend>Pesquisa de Interesse</legend>
-        <label for="webmaster">Você deseja trabalhar como Webmaster?</label>
+        <b>Você deseja trabalhar como Webmaster?</b>
         <br>
-        <input type="radio" name="resp" value="sim">
-        <label for="sim">Sim</label>
+        <input type="radio" name="resp" value="sim">Sim
         <br>
-        <input type="radio" name="resp" value="nao">
-        <label for="nao">Não</label>
+        <input type="radio" name="resp" value="nao">Não
         <br>
-        <input type="radio" name="resp" value="talvez">
-        <label for="talvez">Talvez</label>
+        <input type="radio" name="resp" value="talvez">Talvez
         <br>
-        <input type="radio" name="resp" value="quemsabe">
-        <label for="quemsabe">Quem sabe</label>
+        <input type="radio" name="resp" value="quemsabe">Quem sabe
         <br><br>
-        <label for="deseja">Oque você deseja aprender?</label>
+        <b>Oque você deseja aprender?</b>
         <br>
         <input type="checkbox" name="resp" value="html"> HTML
         <br>
@@ -118,7 +114,7 @@
         <br>
         <input type="checkbox" name="resp" value="javascript">Javascript
         <br><br>
-        <label for="comentario"><b>Deixe seu comentario: </b></label>
+        <b>Deixe seu comentario: </b>
         <textarea name="comentario" rows="20" cols="50"></textarea>
       </fieldset>
       <br><br>
