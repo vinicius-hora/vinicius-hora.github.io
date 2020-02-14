@@ -1,0 +1,32 @@
+<html>
+    <head>
+       <script language= "Javascript">
+        var ano;
+        var dia;
+        var mes;
+        var dataAtual = new Date();
+        
+        var total;
+        var aniversario;
+        
+        ano = prompt("digite o ano");
+        mes = prompt("digite o mes");
+        dia = prompt("digite o dia");
+         
+        alert("data atual:"+ dataAtual);
+        var dataNascimento = new Date(ano,mes,dia);
+        alert("data de nascimento:"+ dataNascimento);
+        total = dataAtual - dataNascimento;
+        aniversario = new Date(total);
+        alert("Idate:"+ parseInt(aniversario/31557600000));
+        
+        </script>
+    </head>
+    
+    <body></body>
+</html>
+
+
+
+
+
