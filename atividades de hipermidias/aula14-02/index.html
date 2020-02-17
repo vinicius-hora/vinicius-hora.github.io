@@ -3,21 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Iniciando Java Script</title>
+    <script type= "text/javascript" src="magica.js" >
+     
+  </script>
   </head>
-  <script type="text/javascript" src="ocultar.js"></script>
-
-   <noscript>
-     <p>Seu browser não entende scripts</p>
-     <a href="exemplo.com.br/no-js">Versão sem scripts</a>
-   </noscript>
   
-
-
-
 
   <body>
 
-    <input type="text" id="texto" value=" "> <p>você está digitando: </p> <span id="magia"></span>
+<input id="edValue" type="text" onInput="digitar(event)"><br>
+texto digitado: <span id="lblValue"></span>
 
     <!--<input type"button" name="name" value="Clique Aqui" onclick="disparar_alerta()">
     <button type="button" onclick="alert('caixa de alerta');">Alert </button>
