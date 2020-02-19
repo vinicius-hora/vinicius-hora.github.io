@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Reserva de hotel</title>
+    <script type="text/javascript" src="form.js"> </script>
+
+  </head>
+  <body>
+    <form class="" action="form.html" method="post">
+      <fieldset>
+        <b>Nome:</b>
+        <input type="text" id="insertNome" value="">
+        <br><br>
+        <b>Telefone: </b>
+        <input type="text" id="insertNumero" value="">
+        <br><br>
+        <b>Data Chegada:</b>
+        <input type="date" id="insertChegada" value="">
+        <br><br>
+        <b>Data Saida:</b>
+        <input type="date" id="insertSaida" value="">
+        <br><br>
+        <b>Tipo de Quarto: </b>
+        <input type="number" id="insertQuarto">
+        <br>
+        <b>1 - Single R$:139,00</b>
+          <b>2 - Single R$:220,00</b>
+            <b>3 - Single R$:340,00</b>
+
+        <br><br>
+        <b>Crianças menores de 5 anos(cada criança adicional custa R$ 30,00 a mais por noite) máximo de 4 hóspedes:</b> <br>
+        <b>Número de crianças: </b>
+        <input type="number" id="isertCrianca">
+
+      </fieldset>
+      <br><br><br>
+      <input type="submit" name="Enviar" onclick="verificaNomeNumero()" >
+      <input type="reset" name="Limpar">
+
+    </form>
+
+  </body>
+</html>
